@@ -1,7 +1,7 @@
-from main import app
+
+from main import app, render_template
+
 @app.route("/")
 def homepage():
-    return "SEJA BEM VINDO AO APP EM PYTHON"
-@app.route("/repos")
-def repos():
-    return "Meus repos: https://www.github.com/pedromarsan06"
+    
+    return render_template('index.html')
